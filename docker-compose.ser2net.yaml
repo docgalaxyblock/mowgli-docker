@@ -74,6 +74,8 @@ services:
     pull_policy: always
     tty: true
     privileged: true
+    #group_add:   # enable this if you use PiOS
+    #  - "104"    # and you want to use a controller
     logging:
       driver: "json-file"
       options:
