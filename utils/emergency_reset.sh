@@ -1,2 +1,2 @@
 #!/bin/bash
-docker compose exec openmower /entrypoint.sh rosservice call /mower_service/emergency 0
+docker compose exec openmower /entrypoint.sh ./open_mower_ros/utils/mower_buttons/emergency_reset.sh
